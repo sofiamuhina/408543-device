@@ -21,3 +21,201 @@ h2.title {
     font-weight: Bold;
     line-height: 53px;
 }
+
+
+.main_header {
+    display: flex; 
+    margin-top: 40px;
+    
+}
+
+.header_container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1160px;
+    background-color: #f7de7b;
+    margin:auto;
+    padding-bottom: 150px;
+}
+
+.user_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffe6b1; 
+}
+
+.main_navigation {
+    display: flex;
+    background-color: #ffe6b1; 
+}
+
+.main_navigation ul {
+    display: flex;   
+    justify-content: space-around;
+    background-color:  #f9f6cf;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1160px;
+    background-color: #6279a6;
+}
+
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    background-color: #bce2f6; 
+    margin: 50px;
+    margin-top: -111px;
+}
+
+.description {
+    margin-left: 126px;
+}
+
+
+
+.navigation_catalog ul{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: space-between;
+    background-color: #bccff6; 
+    height: 275px;
+}
+
+.navigation_catalog ul li {
+    width: 160px;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    background-color: #bce2f6;
+    margin-bottom: 80px;
+    margin-top: 46px;
+    height: 320px;
+}
+
+.navigation_delivery ul {
+    display: flex;
+    flex-direction: column;
+    width: 278px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 437px;
+    margin-left: 118px;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 95px;
+    margin-bottom: 94px;
+    height: 100px;
+    background-color: #bccff6;
+}
+
+.company {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    background-color: #bccff6; 
+}
+
+.company .contacts {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    background-color: #bccff6; 
+}
+
+.main_footer {
+    display: flex;
+    width: 100%; 
+    margin-top: 90px;
+    background-color: #649260;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #83cb85;
+    margin: auto;
+    flex-basis: 1160px;
+    justify-content: space-between;
+    
+}
+
+.footer_container .user_block,
+.footer_container .contacts,
+.social  {
+    display: flex;
+    background-color: #b0f0b2;
+    justify-content: space-between;
+    height: 55px;
+    margin: 5px;
+}
+
+ul {
+    display: flex;
+}
+
+.second_header {
+    background-color: #bce2f6; 
+    margin: auto;
+    margin-top: 38px;
+    margin-bottom: 48px;
+    display: flex;
+    width: 1160px;
+}
+
+.main_catalog {
+    margin: auto;
+    width: 100%;
+    background-color: #6295a1;
+}
+
+.main_catalog .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #6279a6;
+    margin: auto;
+    width: 1160px;
+}
+
+
+.filtres {
+    display: flex;
+    flex-direction: column;
+    background-color: #bce2f6;
+    align-items: flex-end;
+    width: 329px;
+    
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 761px;
+}
