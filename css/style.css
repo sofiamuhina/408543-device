@@ -25,8 +25,7 @@ h2.title {
 
 .main_header {
     display: flex; 
-    margin-top: 40px;
-    
+    margin-top: 40px;  
 }
 
 .header_container {
@@ -34,7 +33,7 @@ h2.title {
     flex-direction: column;
     flex-basis: 1160px;
     background-color: #f7de7b;
-    margin:auto;
+    margin: auto;
     padding-bottom: 150px;
 }
 
@@ -137,7 +136,7 @@ h2.title {
     background-color: #bccff6; 
 }
 
-.company .contacts {
+.company_contacts {
     display: flex;
     flex-direction: column;
     width: 560px;
