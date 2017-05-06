@@ -216,7 +216,8 @@ a {
 .main_navigation .btn {
     position: relative;
     border: none;
-    background-color: inherit;
+    -ms-background-color: inherit;
+    background-color: inherit;    
 }
 
 .main_navigation .btn::after {
@@ -232,6 +233,8 @@ a {
 
 
 
+/*MAIN*/
+
 .main_container {
     display: flex;
     flex-direction: column;
@@ -240,6 +243,9 @@ a {
     background-color: #ffffff;
 }
 
+
+
+/*slider*/
 
 .slider {
     display: flex;
@@ -250,8 +256,13 @@ a {
     margin-bottom: 105px;
 }
 
+
+
 .description {
     display: flex;
+    flex-direction: column;   
+    margin-left: 120px;
+    width: 500px;
     position: relative;
 }
 
@@ -276,42 +287,127 @@ a {
     font-family: 'Gilroy ExtraBold';
 }
 
+.slider .above {
+    position: absolute;
+    top: 37px;
+    background-color: #ffffff;
+    width: 100px;
+    height: 7px;
+}
+
 .description .main_desc {
     line-height: 30px;
+    position: relative;
 }
 
 .description .btn {
+    position: absolute;
+    top: 284px;
+    width: 220px;
+    height: 8px;
+    background-color: #f0c52e;
+    margin-top: 45px;
+    text-align: center;
+    border-top: 1px solid #f4d361;
+    border-bottom: 1px solid #f4d361;
+
+}
+
+.description a {
+    position: absolute;
+    top: -7px;
+    width: 133px;
+    left: 50%;
+    margin-left: -66px;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Gilroy ExtraBold'; 
+    letter-spacing: 3px;
+}
+
+.description .btn:hover {
+    top: 267px;
+    height: 40px;
+}
+
+.description .btn:hover a {
+    top: 9px;
+}
+
+.description .btn:active a {
+    opacity: 0.3;
+}
+
+.slides {
+    position: absolute;
+    top: 305px;
+    left: 375px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 72px;
+    list-style-type: circle;
 }
 
 .description .features {
     width: 500px;
+    margin-top: 130px;
     display: flex;
     justify-content: space-between;
 }
 
+.description .item { 
     display: inline-block;
     text-align: left;
+    margin-right: 68px;
 }
 
 .item span {
     font-size: 36px;
     font-family: 'Gilroy Light';  
+    letter-spacing: 1px;
 }
+
+
+
+/*CATALOG*/
 
 .navigation_catalog ul{
     background-color: #ffffff; 
     height: 275px;
+    
 }
 
 .navigation_catalog li {
     display: inline-block;
     width: 160px;
+    min-height: 220px;
     vertical-align: top;
     margin-right: 40px;
+}
+
+.navigation_catalog .photo {
+    background-color: #f7e296;
+    height: 160px;   
+    text-align:  center;
+    margin-bottom: 35px;
+}
+
+li:hover .photo {
+    background-color: #f0c52e;
+}
+
+li:active img,
+li:active .name_catalog {
+    opacity: 0.3;
+}
+
+.navigation_catalog span {
+    font-family: 'Gilroy ExtraBold';
+    font-size: 18px;
+    font-weight: bold;
+    
 }
 
 .navigation_catalog li:last-child {
@@ -323,24 +419,109 @@ a {
     margin-left: -40px;
 }
 
+
+
+/*DELIVERY*/
+
 .delivery {
     background-color: #e5e5e5;
     height: 320px;
+    margin-bottom: 80px;
+    margin-top: 186px;
+}
+
+.delivery .main_container {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%; 
+    margin: auto;
+    width: 1160px;
+    background-color: inherit;
 }
 
 .navigation_delivery ul {
     width: 278px;
+    margin-top: -95px;
+    margin-left: -40px;
+    border-right: 7px solid #000000;
+    padding-top: 80px;
+    padding-bottom: 70px;
 }
 
 .navigation_delivery li {
     list-style: none;
+	height: 40px;
+	margin-bottom: 25px;
+}
+
+
+.navigation_delivery button {
+    position: relative;
+    width: 160px;
+    height: 8px;
+    background-color: #f0c52e;
+    border-top: 1px solid #f4d361;
+    border-bottom: 1px solid #f4d361;
+    border-right: none;
+}
+
+
+.navigation_delivery span {
+    position: absolute;
+    top: -8px;
+    width: 124px;
+    left: 50%;
+    margin-left: -62px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Gilroy ExtraBold';
+    letter-spacing: 3px;
+    border: none;
+}
+
+.delivery li:hover button {
+    height: 40px;
+}
+
+.delivery li:hover span {
+    top: 7px;
+}
+
+.delivery li:active button {
+    background-color: #000000;
+    width: 278px;
+    height: 40px;
+    position: relative;
+}
+
+.delivery li:active span {
+    top: 7px;
+    color: #f7e184;
+    position: absolute;
+    left: 28%;
 }
 
 .info {
     display: flex;
     flex-direction: column;
     width: 437px;
+    margin-left: 117px;
+    margin-top: -68px;
+    margin-right: 131px;
 }
+
+.info p {
+    margin-top: -10px;
+    line-height: 30px;
+}
+
+.delivery img {
+    margin-top: -15px;
+}
+
+
+/*PARTNERS*/
 
 .partners {
     display: flex;
@@ -350,16 +531,80 @@ a {
     height: 100px;
 }
 
+.partners img {
+     -ms-filter: grayscale(100%);
+    filter: grayscale(100%);   
+}
+
+.partners img:hover {
+     -ms-filter: grayscale(100%);
+    filter: grayscale(0%);   
+}
+
+
+/*ABOUT US/CONTACTS*/
+
 .company {
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
 }
 
+.above {
+    width: 80px;
+    height: 7px;
+    background-color: #000000;
+}
+
 .about_us {
     display: flex;
     flex-direction: column;
+    width: 475px; 
+    margin-right: 125px;
 }
+
+.company p {
+    line-height: 30px;
+}
+
+.about_us ul {
+    margin-top: 50px;
+    list-style-type: circle;
+}
+
+.about_us li {
+    font-size: 16px;
+    font-family: 'Gilroy ExtraBold';
+    font-weight: bold;
+    color: #000000;
+    line-height: 40px;
+}
+
+
+.company .btn {
+    position: relative;
+    width: 260px;
+    height: 8px;
+    background-color: #f0c52e;
+    margin-top: 53px;
+    text-align: center;
+    border-top: 1px solid #f4d361;
+    border-bottom: 1px solid #f4d361;
+}
+
+.company a {
+    position: absolute;
+    top: -7px;
+    width: 220px;
+    left: 50%;
+    margin-left: -110px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Gilroy ExtraBold'; 
+    letter-spacing: 3px;
+}
+
 
 .company_contacts {
     display: flex;
@@ -367,10 +612,20 @@ a {
     width: 560px;
 }
 
+.map {
+    margin-top: 25px;
+    margin-bottom: 24px;
+}
+
+
+/*FOOTER*/
+
 .main_footer {
     display: flex;
     width: 100%; 
+    margin-top: 95px;
     background-color: #464646;
+    padding-top: 52px;
 }
 
 .footer_container {
@@ -379,13 +634,123 @@ a {
     background-color: #464646;
     margin: auto;
     flex-basis: 1160px;
+    justify-content: space-between;   
 }
 
+.main_footer .logo {
+    color: #ffc600;
+    margin-top: 18px;
+    margin-left: 0px;
+}
+
+
+.user_footer li {
+    position: relative;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.user_footer li:hover {
+    opacity: 1;
+}
+
+.user_footer li:active {
+    opacity: 0.3;
+}
+
+.user_footer li::before {
+    position: absolute;
+    top: 6px;
+    content: "";
+    width: 15px;
+    height: 15px; 
+}
+
+.user_footer li:first-child {
+    margin-right: 40px;
+    width: 70px;
+    text-align: right;    
+}
+
+.user_footer li:first-child::before {
+    background: transparent url("../img/user2.png") no-repeat; 
+}
+
+.user_footer li:nth-child(2) {   
+    width: 100px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.user_footer li:nth-child(2)::before {
+    background: transparent url("../img/compare2.png") no-repeat;
+}
+
+
+.user_footer li:last-child::before {
+    background: transparent url("../img/cart2.png") no-repeat;
+}
+
+.user_footer a {
+    margin-left: 23px;
+}
+
+footer a, 
+footer p {
+    color: #ffffff;
+}
+
+.footer_container .user_footer,
 .footer_container .contacts,
+.down  {
     display: flex;
+   /* background-color: #464646;*/
     justify-content: space-between;
+    height: 55px;  
 }
 
+.contacts {
+    margin-top: 10px;
+}
+
+.contacts ul {
+    margin-right: 65px;
+}
+
+.contacts li {
+    width: 140px;
+    text-align: center; 
+    margin: 2px;
+}
+
+.down {
+    margin-top: 45px;
+}
+
+.down .above {
+    background-color: #ffc600;
+}
+
+.social {
+    margin-right: 35px;
+}
+
+.social img {
+    opacity: 0.3;
+    margin-right: 10px;
+}
+
+.social img:hover {
+    opacity: 0.6;
+}
+
+.social img:active {
+    opacity: 0.1;
+}
+
+
+
+/*CATALOG PAGE*/
 
 .second_header {
     background-color: #bce2f6; 
