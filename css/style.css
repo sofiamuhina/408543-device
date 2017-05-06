@@ -26,6 +26,9 @@ h2.title {
 }
 
 
+
+/*HEADER*/
+
 .main_header {
     display: flex; 
     margin-top: 40px;  
@@ -43,8 +46,6 @@ h2.title {
 
 
 
-/*logo */
-
 .logo {
     color: #000000;
     font-size: 48px;
@@ -54,15 +55,6 @@ h2.title {
     margin-top: -10px;
     font-family: 'Gilroy ExtraBold';
 }
-
-.logo:hover {
-    opacity: 0.6;
-}
-
-.logo:active {
-    opacity: 0.3;
-}
-
 
 
 
@@ -156,17 +148,24 @@ a {
     display: inline-block;
 }
 
-.user_block a:hover,
+.user_block li:hover,
 .main_navigation a:hover,
-.main_navigation .btn:hover {
+.main_navigation .btn:hover,
+.logo:hover,
+.contacts li:hover,
+.down > img:hover {
     opacity: 0.6;
 }
 
-.user_block a:active,
+.user_block li:active,
 .main_navigation a:active,
-.main_navigation .btn:active {
+.main_navigation .btn:active,
+.logo:active,
+.contacts li:active,
+.down > img:active {
     opacity: 0.3;
 }
+
 
 
 
@@ -193,7 +192,8 @@ a {
 }
 
 .main_navigation a,
-.main_navigation .btn {
+.main_navigation .btn,
+.navigation_contacts a {
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -203,12 +203,14 @@ a {
 
 .main_navigation a:hover,
 .main_navigation .btn:hover {
-    opacity: 0.6;   
+    opacity: 0.6; 
+    border: none;
 }
 
 .main_navigation a:active,
 .main_navigation .btn:active {
     opacity: 0.3;   
+    border: none;
 }
 
 .main_navigation .btn {
@@ -229,7 +231,6 @@ a {
 }
 
 
-/*main*/
 
 .main_container {
     display: flex;
@@ -251,8 +252,6 @@ a {
 
 .description {
     display: flex;
-    flex-direction: column;
-    margin-left: 126px;
     position: relative;
 }
 
@@ -282,9 +281,6 @@ a {
 }
 
 .description .btn {
-   /* position: absolute;
-    top: 325px; */
-    margin-top: 40px;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
@@ -293,15 +289,11 @@ a {
 
 .description .features {
     width: 500px;
-    margin-top: 65px;
     display: flex;
     justify-content: space-between;
 }
 
-.description .item {
-    
     display: inline-block;
-    /*margin-right: 80px; */
     text-align: left;
 }
 
@@ -316,10 +308,8 @@ a {
 }
 
 .navigation_catalog li {
-    background-color: #f7e296;
     display: inline-block;
     width: 160px;
-    height: 160px;
     vertical-align: top;
     margin-right: 40px;
 }
@@ -334,12 +324,7 @@ a {
 }
 
 .delivery {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
     background-color: #e5e5e5;
-    margin-bottom: 80px;
-    margin-top: 46px;
     height: 320px;
 }
 
@@ -355,7 +340,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 437px;
-    margin-left: 118px;
 }
 
 .partners {
@@ -375,7 +359,6 @@ a {
 .about_us {
     display: flex;
     flex-direction: column;
-    width: 560px; 
 }
 
 .company_contacts {
@@ -387,7 +370,6 @@ a {
 .main_footer {
     display: flex;
     width: 100%; 
-    margin-top: 90px;
     background-color: #464646;
 }
 
@@ -397,18 +379,11 @@ a {
     background-color: #464646;
     margin: auto;
     flex-basis: 1160px;
-    justify-content: space-between;
-    
 }
 
-.footer_container .user_block,
 .footer_container .contacts,
-.social  {
     display: flex;
-    background-color: #464646;
     justify-content: space-between;
-    height: 55px;
-    margin: 5px;
 }
 
 
