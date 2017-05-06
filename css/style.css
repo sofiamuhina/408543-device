@@ -69,11 +69,12 @@ h2.title {
     justify-content: space-between;
 }
 
-.user_block p {
+.user_block .search {
     position: relative;
+    margin-top: 15px;
 }
 
-.user_block p::before {
+.user_block .search::before {
     position: absolute;
     left: 2px;
     top: 5px;
@@ -83,7 +84,7 @@ h2.title {
     background: transparent url("../img/search.png") no-repeat; 
 }
 
-input.search {
+input.search_row {
     background-color: inherit;
     border-style: none;
     margin-left: 40px;
@@ -91,6 +92,44 @@ input.search {
     font-size: 15px;
     font-weight: lighter;
     opacity: 0.3;
+}
+
+input.search_row:hover {
+    opacity: 0.6;
+}
+
+input.search_row:focus {
+    opacity: 1;
+}
+
+.underline {
+    display: none;
+    position: absolute;
+    top: 32px;
+    width: 357px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.find {
+    display: none;
+    width: 86px;
+    position: absolute;
+    left: 357px;
+    top: -12px;
+    border: 2px solid #000000;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.find:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.find:active {
+    color: #747474;
 }
 
 .user_block li {
@@ -153,7 +192,10 @@ a {
 .main_navigation .btn:hover,
 .logo:hover,
 .contacts li:hover,
-.down > img:hover {
+.down > img:hover, 
+.hidden_menu a:hover,
+.main_navigation a:hover,
+.main_navigation .btn:hover{
     opacity: 0.6;
 }
 
@@ -162,7 +204,10 @@ a {
 .main_navigation .btn:active,
 .logo:active,
 .contacts li:active,
-.down > img:active {
+.down > img:active, 
+.hidden_menu a:active,
+.main_navigation a:active,
+.main_navigation .btn:active{
     opacity: 0.3;
 }
 
@@ -201,18 +246,6 @@ a {
     font-family: 'Gilroy ExtraBold';    
 }
 
-.main_navigation a:hover,
-.main_navigation .btn:hover {
-    opacity: 0.6; 
-    border: none;
-}
-
-.main_navigation a:active,
-.main_navigation .btn:active {
-    opacity: 0.3;   
-    border: none;
-}
-
 .main_navigation .btn {
     position: relative;
     border: none;
@@ -232,6 +265,33 @@ a {
 }
 
 
+.hidden_menu {
+    display: none;
+    height: 144px;
+    width: 1040px;
+    position: absolute;
+    top: 197px;
+    z-index: 2;
+    background-color: #f7e296;
+    margin-left: 60px;
+}
+
+.row {
+    line-height: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    width: 545px;
+}
+
+.second {
+    width: 330px;
+}
+
+
+
 
 /*MAIN*/
 
@@ -248,15 +308,48 @@ a {
 /*slider*/
 
 .slider {
-    display: flex;
-    flex-direction: row;  
     margin-left: 90px;
     margin-right: 60px;
     margin-top: -111px;
     margin-bottom: 105px;
 }
 
+.first_slide {
+    display: flex;
+    flex-direction: row;
+}
 
+.second_slide {
+    display: none;
+    flex-direction: row;
+    margin-left: 26px;
+}
+
+.third_slide {
+    display: none;
+    flex-direction: row;
+    margin-left: -60px;
+}
+
+.third_slide .description {
+    margin-left: 32px;
+}
+
+.third_slide .number{
+    left: 315px;
+} 
+
+.third_slide img {
+    margin-top: 64px;
+}
+
+.third_slide .features {
+    width: 320px;
+}
+
+.third_slide .description .item {
+    margin-right: 30px;
+}
 
 .description {
     display: flex;
@@ -275,6 +368,7 @@ a {
     color: #000000;
     margin-top: 80px;
     margin-bottom: 5px;
+    z-index: 2;
 }
 
 .number {
@@ -350,7 +444,7 @@ a {
     list-style-type: circle;
 }
 
-.description .features {
+.features {
     width: 500px;
     margin-top: 130px;
     display: flex;
@@ -366,7 +460,6 @@ a {
 .item span {
     font-size: 36px;
     font-family: 'Gilroy Light';  
-    letter-spacing: 1px;
 }
 
 
