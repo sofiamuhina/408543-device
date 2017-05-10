@@ -8,13 +8,12 @@
     <body>
         <header class="main_header catalog">
             <div class="header_container">
-                <div class="logo">Device
+                <div class="logo"><a href="index.html">Device</a>
                 </div>
                 <div class="user_block">
                     <div class="search">
                         <input class="search_row" type="text" placeholder="Поиск по сайту">
                         <span class="find">Найти</span>
-                        <span class="underline"></span> 
                     </div>
                     <ul>
                         <li><a href="#">Валентин Петухов</a>
@@ -28,7 +27,22 @@
                     </ul>
                 </div>
                 <nav class="main_navigation">
-                    <button class="btn">Каталог товаров</button>   
+                    <button class="btn"><span>Каталог товаров</span>
+                        <div class="hidden_menu">
+                            <div class="row first">
+                                <a href="#">Виртуальная реальность</a>
+                                <a href="#">Фитнес-браслеты</a>
+                                <a href="#">Квадрокоптеры</a>
+                            </div>
+                            <div class="row second">
+                                <a href="#">Моноподы для селфи</a>
+                                <a href="#">Умные часы</a>
+                            </div>
+                            <div class="row">
+                                <a href="#">Экшн-камеры</a>
+                            </div>     
+                        </div>
+                    </button>   
                     <ul>
                         <li><a href="delivery.html">Доставка</a>
                         </li>
@@ -108,12 +122,12 @@
                     <div class="bluetooth">
                         <span>Bluetooth</span>
                         <label class="check_bluetooth">
-                            <input type="radio">
+                            <input type="radio" name="blu">
                             <span class="indicator"></span>
                             <span>Есть</span>
                         </label>
                         <label class="check_bluetooth">
-                            <input type="radio">
+                            <input type="radio" name="blu">
                             <span class="indicator"></span>
                             <span>Нет</span>
                         </label>
@@ -214,7 +228,7 @@
                         <a href="instagram.com"><img src="img/insta.png" alt="Instagram"></a>
                         <a href="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
                     </div>
-                    <img src="img/htmlacademy.png" height="34px" alt="htmlacademy.ru">
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" height="34px" alt="htmlacademy.ru"></a>
                 </div>   
             </div>
         </footer>

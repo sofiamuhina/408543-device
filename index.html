@@ -12,9 +12,8 @@
                 </div>
                 <div class="user_block">
                     <div class="search">
-                        <input class="search_row" type="text" value="Поиск по сайту">
+                        <input class="search_row" type="text" placeholder="Поиск по сайту">
                         <span class="find">Найти</span>
-                        <span class="underline"></span> 
                     </div>
                     <ul>
                         <li><a href="#">Войти</a>  
@@ -26,7 +25,22 @@
                     </ul>
                 </div>
                 <nav class="main_navigation"> 
-                    <button class="btn">Каталог товаров</button>   
+                    <button class="btn"><span>Каталог товаров</span>
+                        <div class="hidden_menu">
+                            <div class="row first">
+                                <a href="#">Виртуальная реальность</a>
+                                <a href="#">Фитнес-браслеты</a>
+                                <a href="#">Квадрокоптеры</a>
+                            </div>
+                            <div class="row second">
+                                <a href="#">Моноподы для селфи</a>
+                                <a href="#">Умные часы</a>
+                            </div>
+                            <div class="row">
+                                <a href="#">Экшн-камеры</a>
+                            </div>     
+                        </div>
+                    </button>
                     <ul>
                         <li><a href="delivery.html">Доставка</a>
                         </li>
@@ -36,25 +50,11 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="hidden_menu">
-                    <div class="row first">
-                        <a href="#">Виртуальная реальность</a>
-                        <a href="#">Фитнес-браслеты</a>
-                        <a href="#">Квадрокоптеры</a>
-                    </div>
-                    <div class="row second">
-                        <a href="#">Моноподы для селфи</a>
-                        <a href="#">Умные часы</a>
-                    </div>
-                    <div class="row">
-                        <a href="#">Экшн-камеры</a>
-                    </div>     
-                </div>
             </div>
         </header>
         <main class="main_container">
             <article class="slider">
-                <div class="first_slide">
+                <div class="first_slide active">
                     <div class="photo">
                         <img src="img/slider-1.png" alt="Селфи-палки">
                     </div> 
@@ -66,7 +66,7 @@
                             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                         <span class="btn"><a href="#">Подробнее</a></span>
                         <ul class="slides">
-                            <li><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>
                         </ul>
@@ -98,7 +98,7 @@
                         <span class="btn"><a href="#">Подробнее</a></span>
                         <ul class="slides">
                             <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
                             <li><a href="#"></a></li>
                         </ul>
                         <div class="features">
@@ -122,7 +122,7 @@
                         <ul class="slides">
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li  class="active"><a href="#"></a></li>
                         </ul>
                         <div class="features">
                             <div class="item">
@@ -142,7 +142,7 @@
                     <li>
                         <a href="virtual_reality.html">
                             <div class="photo">
-                                <img src="img/popular-1.png" vspace="52px" alt="Виртуальная реальность">
+                                <img src="img/popular-1.png" alt="Виртуальная реальность">
                             </div>
                             <span class="name_catalog">Виртуальная реальность</span>
                         </a>
@@ -150,7 +150,7 @@
                     <li>
                         <a href="monopods.html">
                             <div class="photo">
-                                <img src="img/popular-2.png" vspace="43px" alt="Моноподы для селфи">
+                                <img src="img/popular-2.png" alt="Моноподы для селфи">
                             </div>
                             <span class="name_catalog">Моноподы <br> для селфи</span>
                         </a>
@@ -158,28 +158,28 @@
                     <li>
                         <a href="action_cameras.html">
                             <div class="photo">
-                                <img src="img/popular-3.png" vspace="38px" alt="Экшн-камеры">
+                                <img src="img/popular-3.png" alt="Экшн-камеры">
                             </div>
                             <span class="name_catalog">Экшн-камеры</span>
                         </a>
                     </li>
                     <li><a href="fitnes_bracelet.html">
                             <div class="photo">
-                                <img src="img/popular-4.png" vspace="50px" alt="Фитнес-браслеты">
+                                <img src="img/popular-4.png" alt="Фитнес-браслеты">
                             </div>
                             <span class="name_catalog">Фитнес-браслеты</span>
                         </a>
                     </li>
                     <li><a href="smart_watch.html">
                             <div class="photo">
-                                <img src="img/popular-5.png" vspace="32px" alt="Умные часы">
+                                <img src="img/popular-5.png" alt="Умные часы">
                             </div>
                             <span class="name_catalog">Умные часы</span>
                         </a>
                     </li>
                     <li><a href="quadcopters.html">
                             <div class="photo">
-                                <img src="img/popular-6.png" vspace="50px" alt="Квадрокоптеры">
+                                <img src="img/popular-6.png" alt="Квадрокоптеры">
                             </div>
                             <span class="name_catalog">Квадрокоптеры</span>
                         </a>
@@ -187,23 +187,23 @@
                 </ul>
             </nav>
         </main>
-        <article class="delivery">
-            <div class="main_container">
-                <nav class="navigation_delivery">
+        <article class="services">
+            <div class="main_container delivery">
+                <nav class="navigation_service">
                     <ul>
-                        <li>
-                        	<button>
-                            	<span>Доставка</span>
+                        <li class="active">
+                            <button>
+                                <span>Доставка</span>
                             </button>
                         </li>
                         <li>
-                        	<button>
-                            	<span>Гарантия</span>
+                            <button>
+                                <span>Гарантия</span>
                             </button>
                         </li>
                         <li>
-                        	<button>
-                            	<span>Кредит</span>
+                            <button>
+                                <span>Кредит</span>
                             </button>
                         </li>
                     </ul>
@@ -213,6 +213,58 @@
                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>           
                 </div>
                 <img src="img/delivery.png" width="136px" height="164px">
+            </div> 
+            <div class="main_container warranty">
+                <nav class="navigation_service">
+                    <ul>
+                        <li>
+                            <button>
+                                <span>Доставка</span>
+                            </button>
+                        </li>
+                        <li class="active">
+                            <button>
+                                <span>Гарантия</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <span>Кредит</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="info">
+                    <h2 class="title">Гарантия</h2>
+                    <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>           
+                </div>
+                <img src="img/warranty.png" width="173px" height="196px">
+            </div> 
+            <div class="main_container credit">
+                <nav class="navigation_service">
+                    <ul>
+                        <li>
+                            <button>
+                                <span>Доставка</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <span>Гарантия</span>
+                            </button>
+                        </li>
+                        <li class="active">
+                            <button>
+                                <span>Кредит</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="info">
+                    <h2 class="title">Кредит</h2>
+                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>           
+                </div>
+                <img src="img/credit.png" width="156px" height="188px">
             </div>
         </article>
         <div class="main_container">
@@ -284,9 +336,33 @@
                         <a href="instagram.com"><img src="img/insta.png" alt="Instagram"></a>
                         <a href="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
                     </div>
-                    <img src="img/htmlacademy.png" height="34px" alt="htmlacademy.ru">
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" height="34px" alt="htmlacademy.ru"></a>
                 </div>  
            </div>
         </footer>
+        <div class="modal_content">
+            <button class="close" type="button" title="Закрыть"></button>
+            <form  action="#" method="get">
+                <label class="name">
+                    <span>Ваше имя:</span>
+                    <input type="text" placeholder="Представьтесь, пожалуйста">
+                </label>
+                <label class="mail">
+                    <span>Ваш e-mail:</span>
+                    <input type="text" placeholder="Для отправки ответа">
+                </label>
+                <label class="message">
+                    <span>Текст письма:</span>
+                    <textarea rows="7" type="text" placeholder="В свободной форме"></textarea>
+                </label>
+                <button class="btn" type="submit"><span>Отправить</span></button>
+            </form>
+        </div>
+        <div class="map_hidden">
+            <button class="close" type="button" title="Закрыть"></button>
+            <div>
+                <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6qZnOzB" width="960" height="560" frameborder="0"></iframe>
+            </div>
+        </div>
     </body>
 </html>

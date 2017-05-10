@@ -53,6 +53,7 @@ h2.title {
     margin-left: 60px;
     margin-top: -10px;
     font-family: 'Gilroy ExtraBold';
+    width: 180px;
 }
 
 
@@ -84,7 +85,7 @@ h2.title {
 }
 
 input.search_row {
-    background-color: inherit;
+    background: transparent;
     border-style: none;
     margin-left: 40px;
     font-family: 'Open Sans';
@@ -99,15 +100,12 @@ input.search_row:hover {
 
 input.search_row:focus {
     opacity: 1;
+    outline: none;
 }
 
-.underline {
-    display: none;
-    position: absolute;
-    top: 32px;
-    width: 357px;
-    height: 2px;
-    background-color: #000000;
+input.search_row:focus + .find,
+input.search_row:focus + .find::before{
+    display: block;
 }
 
 .find {
@@ -120,6 +118,17 @@ input.search_row:focus {
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: center;
+}
+
+.find::before {
+    content: "";
+    position: absolute;
+    display: none;
+    bottom: -2px;
+    left: -357px;
+    width: 357px;
+    height: 2px;
+    background-color: #000000;
 }
 
 .find:hover {
@@ -189,25 +198,23 @@ a {
 
 .user_block li:hover,
 .main_navigation a:hover,
-.main_navigation .btn:hover,
+.main_navigation .btn:hover span,
 .logo:hover,
 .contacts li:hover,
 .down > img:hover, 
 .hidden_menu a:hover,
-.main_navigation a:hover,
-.main_navigation .btn:hover{
+.main_navigation a:hover {
     opacity: 0.6;
 }
 
+
 .user_block li:active,
 .main_navigation a:active,
-.main_navigation .btn:active,
+.main_navigation .btn:active span,
 .logo:active,
 .contacts li:active,
 .down > img:active, 
-.hidden_menu a:active,
-.main_navigation a:active,
-.main_navigation .btn:active{
+.hidden_menu a:active {
     opacity: 0.3;
 }
 
@@ -249,8 +256,7 @@ a {
 .main_navigation .btn {
     position: relative;
     border: none;
-    -ms-background-color: inherit;
-    background-color: inherit;    
+    background: transparent;    
 }
 
 .main_navigation .btn::after {
@@ -264,16 +270,38 @@ a {
     opacity: 0.3;
 }
 
+.main_navigation .btn:hover::after {
+    opacity: 0.2;
+}
+
+.main_navigation .btn:active::after {
+    opacity: 0.1;
+}
+
+.main_navigation .btn:hover .hidden_menu {
+    display: block;
+}
+
+.main_navigation .btn:focus,
+.services button:focus,
+input[type="range"]:focus,
+.filtres .btn,
+.item button,
+.pages button {
+    outline: none;
+}
 
 .hidden_menu {
     display: none;
     height: 144px;
-    width: 1040px;
+    width: 1100px;
     position: absolute;
-    top: 197px;
-    z-index: 2;
+    top: 51px;
+    left: -58px;
+    z-index: 5;
     background-color: #f7e296;
-    margin-left: 60px;
+    padding-top: 7px;
+    padding-left: 60px;
 }
 
 .row {
@@ -290,6 +318,14 @@ a {
     width: 330px;
 }
 
+.hidden_menu a {
+    font-family: 'Open Sans Light';
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    color: #000;
+}
 
 
 
@@ -441,7 +477,25 @@ a {
     justify-content: space-between;
     flex-direction: row;
     width: 72px;
-    list-style-type: circle;
+    list-style-type: none;
+}
+
+.slides li {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #000;
+    opacity: 0.3;
+}
+
+.slides li:hover {
+    opacity: 0.4;
+}
+
+.slides li:active,
+.slides li.active {
+    opacity: 1;
 }
 
 .features {
@@ -553,9 +607,9 @@ li:active .name_catalog {
     width: 160px;
     height: 8px;
     background-color: #f0c52e;
+    border: none;
     border-top: 1px solid #f4d361;
     border-bottom: 1px solid #f4d361;
-    border-right: none;
 }
 
 
@@ -631,8 +685,7 @@ li:active .name_catalog {
 }
 
 .partners img {
-     -ms-filter: grayscale(100%);
-    filter: grayscale(100%);   
+  filter: grayscale(100%);
 }
 
 .partners img:hover {
@@ -647,7 +700,7 @@ li:active .name_catalog {
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
-    min-height: 560px;
+    min-height: 582px;
 }
 
 .above {
@@ -669,7 +722,7 @@ li:active .name_catalog {
 
 .about_us ul {
     margin-top: 50px;
-    list-style-type: circle;
+    list-style-type: none;
 }
 
 .about_us li {
@@ -678,8 +731,21 @@ li:active .name_catalog {
     font-weight: bold;
     color: #000000;
     line-height: 40px;
+    position: relative;
 }
 
+.about_us li::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: -35px;;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #000;
+    opacity: 0.3;
+}
 
 .company .btn {
     position: relative;
@@ -706,6 +772,22 @@ li:active .name_catalog {
     letter-spacing: 3px;
 }
 
+.company .btn:hover {
+    height: 40px;
+    margin-top: 36px;
+}
+
+.company .btn:hover a {
+    top: 11px;
+}
+
+.company .btn:active a {
+    opacity: 0.3;
+}
+
+.company_contacts .btn:active .modal_content {
+    display: block;
+}
 
 .company_contacts {
     display: flex;
@@ -724,7 +806,7 @@ li:active .name_catalog {
 .main_footer {
     display: flex;
     width: 100%; 
-    margin-top: 95px;
+    margin-top: 83px;
     background-color: #464646;
     padding-top: 52px;
 }
@@ -854,6 +936,7 @@ footer p {
 /*WRITE US*/
 
 .modal_content {
+    display: none;
     position: fixed;
     top: 200px;
     left: 50%;
@@ -868,7 +951,8 @@ footer p {
 }
 
 
-.modal_content .close {
+.modal_content .close,
+.map_hidden .close {
     position: absolute;
     right: 23px;
     top: 24px;
@@ -880,7 +964,9 @@ footer p {
 }
 
 .modal_content .close::before,
-.modal_content .close::after {
+.modal_content .close::after,
+.map_hidden .close::before,
+.map_hidden .close::after {
     content: "";
     width: 31px;
     height: 2px;
@@ -889,20 +975,25 @@ footer p {
     left: 12px;
 }
 
-.modal_content .close::before {
+.modal_content .close::before,
+.map_hidden .close::before {
     transform: rotate(45deg);
 }
 
-.modal_content .close::after {
+.modal_content .close::after,
+.map_hidden .close::after {
     transform: rotate(-45deg);
 }
 
-.modal_content .close:hover {
+.modal_content .close:hover,
+.map_hidden .close:hover {
     background-color: #f0c52e;
 }
 
 .modal_content .close:active::before, 
-.modal_content .close:active::after { 
+.modal_content .close:active::after,
+.map_hidden .close:active::before,
+.map_hidden .close:active::after { 
     opacity: 0.3;
 }
 
@@ -967,9 +1058,21 @@ form .btn span  {
     font-weight: bold;
     font-family: 'Gilroy ExtraBold'; 
     letter-spacing: 3px;
-
 }
 
+/*MODAL MAP*/
+
+.map_hidden {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    margin-left: -480px;
+    z-index: 10;
+    width: 960px;
+    height: 560px;
+    box-shadow: 5px 20px 80px -40px #000000;
+}
 
 
 
@@ -1205,7 +1308,81 @@ form .btn span  {
 }
 
 input[type="range"] {
-    width: 155px;
+    width: 100%;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background-color: inherit;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #7eae29;
+    border: 2px solid #fff;
+    box-shadow: 0 5px 7px -4px #000;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #dbdbdb;
+    height: 2px;
+    width: 250px;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    color: transparent;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+input[type=range]::-moz-range-track {
+    background-color: #dbdbdb;
+    height: 2px;
+    width: 250px;
+}
+
+
+/*IE*/
+input[type="range"]::-ms-track {
+    width: 200px;
+    height: 2px;
+    cursor: pointer;
+    border-color: transparent;
+    color: transparent;
+    background: transparent;
+    padding: 10px;
+}
+input[type="range"]::-ms-thumb {
+    width: 14px;
+    height: 14px;
+    background-color: #eeeeee;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 0;
+}
+input[type="range"]:focus::-ms-thumb {
+    background: transparent;
+}
+input[type="range"]:active::-ms-thumb {
+    background-color: #7eae29;
+    border: 2px solid #fff;
+    box-shadow: 0 5px 7px -4px #000;
+}
+input[type=range]::-ms-fill-lower {
+    background: #91c92f;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #dbdbdb;
 }
 
 .filtres .color,
@@ -1419,7 +1596,7 @@ input[type="range"] {
     width: 155px;
     height: 15px;
     border: none;
-    background: inherit;
+    background: transparent;
     font-family: 'Open Sans Light';
     font-size: 13px;
     font-weight: lighter;
@@ -1540,9 +1717,6 @@ input[type="range"] {
 .number button.active {
     opacity: 1;
 }
-
-
-
 
 .main_footer.catalog {
     margin-top: 0;
