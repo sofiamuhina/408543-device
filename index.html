@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -33,7 +34,7 @@
                             <a href="#">Квадрокоптеры</a>
                         </div>
                         <div class="row second">
-                            <a href="#">Моноподы для селфи</a>
+                            <a href="catalog.html">Моноподы для селфи</a>
                             <a href="#">Умные часы</a>
                         </div>
                         <div class="row">
@@ -55,7 +56,7 @@
             <article class="slider">
                 <div class="first_slide active">
                     <div class="photo">
-                        <img src="img/slider-1.png" alt="Селфи-палки">
+                        <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палки">
                     </div> 
                     <section class="description">
                         <span class="number">01</span>
@@ -87,7 +88,7 @@
                 </div>
                 <div class="second_slide">
                     <div class="photo">
-                        <img src="img/slider-2.png" alt="Фитнес-браслет">
+                        <img src="img/slider-2.png" width="345" height="497" alt="Фитнес-браслет">
                     </div> 
                     <section class="description">
                         <span class="number">02</span>
@@ -110,7 +111,7 @@
                 </div>
                 <div class="third_slide">
                     <div class="photo">
-                        <img src="img/slider-3.png" alt="Мощный квадрокоптер">
+                        <img src="img/slider-3.png" width="526" height="334" alt="Мощный квадрокоптер">
                     </div> 
                     <section class="description">
                         <span class="number">03</span>
@@ -141,15 +142,15 @@
                     <li>
                         <a href="virtual_reality.html">
                             <div class="photo">
-                                <img src="img/popular-1.png" alt="Виртуальная реальность">
+                                <img src="img/popular-1.png" width="160" height="160" alt="Виртуальная реальность">
                             </div>
                             <span class="name_catalog">Виртуальная реальность</span>
                         </a>
                     </li>
                     <li>
-                        <a href="monopods.html">
+                        <a href="catalog.html">
                             <div class="photo">
-                                <img src="img/popular-2.png" alt="Моноподы для селфи">
+                                <img src="img/popular-2.png" width="160" height="160" alt="Моноподы для селфи">
                             </div>
                             <span class="name_catalog">Моноподы <br> для селфи</span>
                         </a>
@@ -157,28 +158,28 @@
                     <li>
                         <a href="action_cameras.html">
                             <div class="photo">
-                                <img src="img/popular-3.png" alt="Экшн-камеры">
+                                <img src="img/popular-3.png" width="160" height="160" alt="Экшн-камеры">
                             </div>
                             <span class="name_catalog">Экшн-камеры</span>
                         </a>
                     </li>
                     <li><a href="fitnes_bracelet.html">
                             <div class="photo">
-                                <img src="img/popular-4.png" alt="Фитнес-браслеты">
+                                <img src="img/popular-4.png" width="160" height="160" alt="Фитнес-браслеты">
                             </div>
                             <span class="name_catalog">Фитнес-браслеты</span>
                         </a>
                     </li>
                     <li><a href="smart_watch.html">
                             <div class="photo">
-                                <img src="img/popular-5.png" alt="Умные часы">
+                                <img src="img/popular-5.png" width="160" height="160" alt="Умные часы">
                             </div>
                             <span class="name_catalog">Умные часы</span>
                         </a>
                     </li>
                     <li><a href="quadcopters.html">
                             <div class="photo">
-                                <img src="img/popular-6.png" alt="Квадрокоптеры">
+                                <img src="img/popular-6.png" width="160" height="160" alt="Квадрокоптеры">
                             </div>
                             <span class="name_catalog">Квадрокоптеры</span>
                         </a>
@@ -187,91 +188,55 @@
             </nav>
         </main>
         <div class="services">
-            <div class="main_container delivery">
+            <div class="main_container">
                 <nav class="navigation_service">
                     <ul>
-                        <li class="active">
-                            <button>
-                                <span>Доставка</span>
-                            </button>
+                        <li class="delivery active">
+                            <span>
+                                <button>Доставка</button>
+                            </span>
                         </li>
-                        <li>
-                            <button>
-                                <span>Гарантия</span>
-                            </button>
+                        <li  class="warranty">
+                            <span>
+                                <button>Гарантия</button>
+                            </span>
                         </li>
-                        <li>
-                            <button>
-                                <span>Кредит</span>
-                            </button>
+                        <li  class="credit">
+                            <span>
+                                <button>Кредит</button>
+                            </span>
                         </li>
                     </ul>
                 </nav>
-                <div class="info">
-                    <h2 class="title">Доставка</h2>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>           
+                <div class="delivery active">
+                    <div class="info">
+                        <h2 class="title">Доставка</h2>
+                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>           
+                    </div>
+                    <img src="img/delivery.png" alt="Доставка" width="136" height="164">
                 </div>
-                <img src="img/delivery.png" alt="Доставка" width="136" height="164">
+                <div class="warranty">
+                    <div class="info">
+                        <h2 class="title">Гарантия</h2>
+                        <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>           
+                    </div>
+                    <img src="img/warranty.png" alt="Гарантия" width="173" height="196">
+                </div>
+                <div class="credit">
+                    <div class="info">
+                        <h2 class="title">Кредит</h2>
+                        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>           
+                    </div>
+                    <img src="img/credit.png" alt="Кредит" width="156" height="188">
+                </div>
             </div> 
-            <div class="main_container warranty">
-                <nav class="navigation_service">
-                    <ul>
-                        <li>
-                            <button>
-                                <span>Доставка</span>
-                            </button>
-                        </li>
-                        <li class="active">
-                            <button>
-                                <span>Гарантия</span>
-                            </button>
-                        </li>
-                        <li>
-                            <button>
-                                <span>Кредит</span>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="info">
-                    <h2 class="title">Гарантия</h2>
-                    <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>           
-                </div>
-                <img src="img/warranty.png" alt="Гарантия" width="173" height="196">
-            </div> 
-            <div class="main_container credit">
-                <nav class="navigation_service">
-                    <ul>
-                        <li>
-                            <button>
-                                <span>Доставка</span>
-                            </button>
-                        </li>
-                        <li>
-                            <button>
-                                <span>Гарантия</span>
-                            </button>
-                        </li>
-                        <li class="active">
-                            <button>
-                                <span>Кредит</span>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="info">
-                    <h2 class="title">Кредит</h2>
-                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>           
-                </div>
-                <img src="img/credit.png" alt="Кредит" width="156" height="188">
-            </div>
         </div>
         <div class="main_container">
             <div class="partners">
-                <img src="img/logo-1.1.png" alt="Dji">
-                <img src="img/logo-2.1.png" alt="SP Gadgets">
-                <img src="img/logo-3.1.png" alt="GoPro">
-                <img src="img/logo-4.1.png" alt="Vive">    
+                <img src="img/logo-1.1.png" width="260" height="100" alt="Dji">
+                <img src="img/logo-2.1.png" width="260" height="100" alt="SP Gadgets">
+                <img src="img/logo-3.1.png" width="260" height="100" alt="GoPro">
+                <img src="img/logo-4.1.png" width="260" height="100" alt="Vive">    
             </div>
             <div class="company">
                 <section class="about_us">
@@ -331,14 +296,15 @@
                 <div class="down">
                     <div class="above"></div>
                     <div class="social">
-                        <a href="facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-                        <a href="instagram.com"><img src="img/insta.png" alt="Instagram"></a>
-                        <a href="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
+                        <a href="facebook.com"><img src="img/facebook.png" width="39" height="38" alt="Facebook"></a>
+                        <a href="instagram.com"><img src="img/insta.png" width="39" height="38" alt="Instagram"></a>
+                        <a href="twitter.com"><img src="img/twitter.png" width="38" height="38" alt="Twitter"></a>
                     </div>
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" height="34" alt="htmlacademy.ru" class="academy"></a>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" width="27" height="34" alt="htmlacademy.ru" class="academy"></a>
                 </div>  
            </div>
         </footer>
+        <div class="shadow"></div>
         <div class="modal_content">
             <button class="close" type="button" title="Закрыть"></button>
             <form  action="#" method="get">
@@ -363,6 +329,6 @@
                 <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6qZnOzB" width="960" height="560" class="map_border"></iframe>
             </div>
         </div>
-        <script src="../js/script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

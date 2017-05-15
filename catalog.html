@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -89,6 +90,14 @@
                     <label class="price">
                         <span>Стоимость</span>
                         <input type="range">
+                        <div class="indicator">
+                            <div class="track"></div>
+                            <div class="track selected"></div>
+                            <div class="thumb min"></div>
+                            <div class="thumb max"></div>
+                            <span class="range min">от 0</span>
+                            <span class="range max">до 5000</span>
+                        </div>
                     </label>
                     <div class="color">
                         <span>Цвет</span>
@@ -131,7 +140,7 @@
                             <span>Нет</span>
                         </label>
                     </div>
-                    <button class="btn" type="submit"><span>Показать</span></button>
+                    <span class="btn" ><button type="submit">Показать</button></span>
                 </form>
             </div>
             <div class="index_right">
@@ -143,15 +152,15 @@
                         <button class="btn">По популярности</button>
                     </div>
                     <div class="arrow">
-                        <button class="btn up active"></button>
-                        <button class="btn under"></button>
+                        <button class="btn up"></button>
+                        <button class="btn under active"></button>
                     </div>
                 </div>
                 <main class="products">
                     <article class="item">
                         <div class="photo">
-                            <img src="img/item-1.jpg" alt="Любительская селфи-палка">
-                            <button class="btn"><span>В корзину</span></button>
+                            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                            <span class="btn"><button>В корзину</button></span>
                             <button class="compare">Добавить к сравнению</button>
                             <div class="new"></div>
                         </div>
@@ -159,17 +168,17 @@
                     </article>
                     <article class="item">
                         <div class="photo">
-                            <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
-                            <button class="btn"><span>В корзину</span></button>
+                            <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                            <span class="btn"><button>В корзину</button></span>
                             <button class="compare">Добавить к сравнению</button>
                             <div class="new"></div>
                         </div>
-                        <p class="name">Профессиональная селфи-палка</p><span class="price">1 500 руб.</span>
+                        <p class="name">Профессиональная <br> селфи-палка</p><span class="price">1 500 руб.</span>
                     </article>
                     <article class="item">
                         <div class="photo">
-                            <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
-                            <button class="btn"><span>В корзину</span></button>
+                            <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                            <span class="btn"><button>В корзину</button></span>
                             <button class="compare">Добавить к сравнению</button>
                             <div class="new"></div>
                         </div>
@@ -177,12 +186,12 @@
                     </article>
                     <article class="item">
                         <div class="photo">
-                            <img src="img/item-4.jpg" alt="Селфи-палка &quot;Следуй за мной&quot;">
-                            <button class="btn"><span>В корзину</span></button>
+                            <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+                            <span class="btn"><button>В корзину</button></span>
                             <button class="compare">Добавить к сравнению</button>
                             <div class="new active"></div>
                         </div>
-                        <p class="name">Селфи-палка "Следуй за мной"</p><span class="price">4 900 руб.</span>
+                        <p class="name">Селфи-палка «Следуй за мной»</p><span class="price">4 900 руб.</span>
                     </article>
                     <div class="pages">
                         <button>Назад</button>
@@ -227,11 +236,11 @@
                 <div class="down">
                     <div class="above"></div>
                     <div class="social">
-                        <a href="facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-                        <a href="instagram.com"><img src="img/insta.png" alt="Instagram"></a>
-                        <a href="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
+                        <a href="facebook.com"><img src="img/facebook.png" width="39" height="38" alt="Facebook"></a>
+                        <a href="instagram.com"><img src="img/insta.png" width="39" height="38" alt="Instagram"></a>
+                        <a href="twitter.com"><img src="img/twitter.png" width="38" height="38" alt="Twitter"></a>
                     </div>
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" height="34" alt="htmlacademy.ru"></a>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" width="27" height="34" alt="htmlacademy.ru" class="academy"></a>
                 </div>   
             </div>
         </footer>
