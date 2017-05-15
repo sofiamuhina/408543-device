@@ -81,130 +81,135 @@
                 </ul>
             </div>
         </div>
-        <div class="container_catalog">
-            <div class="index_left">
-                <div class="title">
-                    <span>Фильтр:</span>
-                </div>
-                <form class="filtres" action="#" method="get"> 
-                    <label class="price">
-                        <span>Стоимость</span>
-                        <input type="range">
-                        <span class="indicator">
-                            <span class="track"></span>
-                            <span class="track selected"></span>
-                            <span class="thumb min"></span>
-                            <span class="thumb max"></span>
-                            <span class="range min">от 0</span>
-                            <span class="range max">до 5000</span>
-                        </span>
-                    </label>
-                    <div class="color">
-                        <span>Цвет</span>
-                        <label class="check_color">
-                            <input type="checkbox">
-                            <span class="indicator"></span>
-                            <span>Черный</span>
-                        </label>
-                        <label class="check_color">
-                            <input type="checkbox">
-                            <span class="indicator"></span>
-                            <span>Белый</span>
-                        </label>
-                        <label class="check_color">
-                            <input type="checkbox">
-                            <span class="indicator"></span>
-                            <span>Синий</span>
-                        </label>
-                        <label class="check_color">
-                            <input type="checkbox">
-                            <span class="indicator"></span>
-                            <span>Красный</span>
-                        </label>
-                        <label class="check_color">
-                            <input type="checkbox">
-                            <span class="indicator"></span>
-                            <span>Розовый</span>
-                        </label>
-                    </div>
-                    <div class="bluetooth">
-                        <span>Bluetooth</span>
-                        <label class="check_bluetooth">
-                            <input type="radio" name="blu">
-                            <span class="indicator"></span>
-                            <span>Есть</span>
-                        </label>
-                        <label class="check_bluetooth">
-                            <input type="radio" name="blu">
-                            <span class="indicator"></span>
-                            <span>Нет</span>
-                        </label>
-                    </div>
-                    <span class="btn" ><button type="submit">Показать</button></span>
-                </form>
+        <div class="catalog_main">
+            <div class="background">
+                <div class="background_left"></div>  
             </div>
-            <div class="index_right">
-                <div class="title">
-                    <span>Сортировка:</span>
-                    <div class="sort">
-                        <button class="btn active">По цене</button>
-                        <button class="btn">По типу</button>
-                        <button class="btn">По популярности</button>
+            <div class="container_catalog">
+                <div class="index_left">
+                    <div class="title">
+                        <span>Фильтр:</span>
                     </div>
-                    <div class="arrow">
-                        <button class="btn up"></button>
-                        <button class="btn under active"></button>
-                    </div>
+                    <form class="filtres" action="#" method="get"> 
+                        <label class="price">
+                            <span>Стоимость</span>
+                            <input type="range">
+                            <span class="indicator">
+                                <span class="track"></span>
+                                <span class="track selected"></span>
+                                <span class="thumb min"></span>
+                                <span class="thumb max"></span>
+                                <span class="range min">от 0</span>
+                                <span class="range max">до 5000</span>
+                            </span>
+                        </label>
+                        <div class="color">
+                            <span>Цвет</span>
+                            <label class="check_color">
+                                <input type="checkbox">
+                                <span class="indicator"></span>
+                                <span>Черный</span>
+                            </label>
+                            <label class="check_color">
+                                <input type="checkbox">
+                                <span class="indicator"></span>
+                                <span>Белый</span>
+                            </label>
+                            <label class="check_color">
+                                <input type="checkbox">
+                                <span class="indicator"></span>
+                                <span>Синий</span>
+                            </label>
+                            <label class="check_color">
+                                <input type="checkbox">
+                                <span class="indicator"></span>
+                                <span>Красный</span>
+                            </label>
+                            <label class="check_color">
+                                <input type="checkbox">
+                                <span class="indicator"></span>
+                                <span>Розовый</span>
+                            </label>
+                        </div>
+                        <div class="bluetooth">
+                            <span>Bluetooth</span>
+                            <label class="check_bluetooth">
+                                <input type="radio" name="blu">
+                                <span class="indicator"></span>
+                                <span>Есть</span>
+                            </label>
+                            <label class="check_bluetooth">
+                                <input type="radio" name="blu">
+                                <span class="indicator"></span>
+                                <span>Нет</span>
+                            </label>
+                        </div>
+                        <span class="btn" ><button type="submit">Показать</button></span>
+                    </form>
                 </div>
-                <main class="products">
-                    <article class="item">
-                        <div class="photo">
-                            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                            <span class="btn"><button>В корзину</button></span>
-                            <button class="compare">Добавить к сравнению</button>
-                            <div class="new"></div>
+                <div class="index_right">
+                    <div class="title">
+                        <span>Сортировка:</span>
+                        <div class="sort">
+                            <button class="btn active">По цене</button>
+                            <button class="btn">По типу</button>
+                            <button class="btn">По популярности</button>
                         </div>
-                        <p class="name">Любительская селфи-палка</p><span class="price">500 руб.</span>
-                    </article>
-                    <article class="item">
-                        <div class="photo">
-                            <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                            <span class="btn"><button>В корзину</button></span>
-                            <button class="compare">Добавить к сравнению</button>
-                            <div class="new"></div>
+                        <div class="arrow">
+                            <button class="btn up"></button>
+                            <button class="btn under active"></button>
                         </div>
-                        <p class="name">Профессиональная <br> селфи-палка</p><span class="price">1 500 руб.</span>
-                    </article>
-                    <article class="item">
-                        <div class="photo">
-                            <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                            <span class="btn"><button>В корзину</button></span>
-                            <button class="compare">Добавить к сравнению</button>
-                            <div class="new"></div>
-                        </div>
-                        <p class="name">Непотопляемая селфи-палка</p><span class="price">2 500 руб.</span>
-                    </article>
-                    <article class="item">
-                        <div class="photo">
-                            <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
-                            <span class="btn"><button>В корзину</button></span>
-                            <button class="compare">Добавить к сравнению</button>
-                            <div class="new active"></div>
-                        </div>
-                        <p class="name">Селфи-палка «Следуй за мной»</p><span class="price">4 900 руб.</span>
-                    </article>
-                    <div class="pages">
-                        <button>Назад</button>
-                        <div class="number">
-                            <button class="active">1</button> 
-                            <button>2</button>
-                            <button>3</button>
-                        </div>
-                        <button>Вперед</button>
                     </div>
-                </main>
-            </div>
-        </div>
+                    <main class="products">
+                        <article class="item">
+                            <div class="photo">
+                                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                                <span class="btn"><button>В корзину</button></span>
+                                <button class="compare">Добавить к сравнению</button>
+                                <div class="new"></div>
+                            </div>
+                            <p class="name">Любительская селфи-палка</p><span class="price">500 руб.</span>
+                        </article>
+                        <article class="item">
+                            <div class="photo">
+                                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                                <span class="btn"><button>В корзину</button></span>
+                                <button class="compare">Добавить к сравнению</button>
+                                <div class="new"></div>
+                            </div>
+                            <p class="name">Профессиональная <br> селфи-палка</p><span class="price">1 500 руб.</span>
+                        </article>
+                        <article class="item">
+                            <div class="photo">
+                                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                                <span class="btn"><button>В корзину</button></span>
+                                <button class="compare">Добавить к сравнению</button>
+                                <div class="new"></div>
+                            </div>
+                            <p class="name">Непотопляемая селфи-палка</p><span class="price">2 500 руб.</span>
+                        </article>
+                        <article class="item">
+                            <div class="photo">
+                                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+                                <span class="btn"><button>В корзину</button></span>
+                                <button class="compare">Добавить к сравнению</button>
+                                <div class="new active"></div>
+                            </div>
+                            <p class="name">Селфи-палка «Следуй за мной»</p><span class="price">4 900 руб.</span>
+                        </article>
+                        <div class="pages">
+                            <button>Назад</button>
+                            <div class="number">
+                                <button class="active">1</button> 
+                                <button>2</button>
+                                <button>3</button>
+                            </div>
+                            <button>Вперед</button>
+                        </div>
+                    </main>
+                </div>
+            </div>  
+        </div>   
         <footer class="main_footer catalog">
             <div class="footer_container">
                 <div class="user_footer">
