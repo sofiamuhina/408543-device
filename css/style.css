@@ -885,8 +885,8 @@ a {
 .map {
     margin-top: 13px;
     margin-bottom: 22px;
-    width=560px;
-    height=222px;
+    width: 560px;
+    height: 222px;
 }
 
 .map_border {
@@ -1473,6 +1473,10 @@ footer p {
     width: 200px;
     height: 2px;
     background-color: #000000;
+}
+
+.price > .indicator::before {
+    width: 0;
 }
 
 .price input {
